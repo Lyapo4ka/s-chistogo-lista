@@ -1,3 +1,7 @@
+* {
+
+}
+
 body {
     margin: 0;
     background-color: #1e1e1e;
@@ -65,9 +69,13 @@ body {
     text-decoration: none;
 }
 
+.header__menu-item:active {
+    text-decoration: none;
+}
+
 .cover {
     background-image: url("./../images/cover.svg");
-    background-position: center;
+    background-position: 4px 55%;
     background-repeat: no-repeat;
     padding-top: 7px;
     padding-bottom: 30px;
@@ -76,11 +84,29 @@ body {
 
 .cover-title {
     font-size: 72px;
-    font-family: 'EB Garamond Regular', serif;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
 }
 
 .accent-span {
     display: block;
+    margin-top: -69px;
+    margin-bottom: 46px;
+}
+
+.accent-span-2 {
+    display: block;
+}
+
+.text-right-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -5px;
+}
+
+.accent-span.text-right {
+    padding-right: 4px;
+    margin-bottom: -66px;
 }
 
 .intro__heading {
@@ -118,7 +144,8 @@ body {
 .content-section__subtitle {
     padding-top: 40px;
     font-size: 28px;
-    font-family: 'EB Garamond Medium', serif;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
 }
 
 .content-section__introduction {
@@ -131,7 +158,7 @@ body {
     justify-content: center;
     font-size: 16px;
     display: grid;
-    gap: 16px;
+    gap: 10px;
     padding: 0 0 39px 20px;
     line-height: 21.6px;
 }
@@ -171,6 +198,8 @@ body {
 
 .card__author-photo {
     width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .card__author-name {
@@ -186,7 +215,7 @@ body {
 
 .card__title {
     font-size: 22px;
-    font-family: "EB Garamond Medium", serif;
+    font-family: 'EB Garamond', serif;
     font-weight: 500;
     line-height: 135%;
 }
@@ -198,11 +227,6 @@ body {
 
 }
 
-.line {
-    border-bottom: 1px solid #FEE42A;
-    overflow: visible;
-}
-
 .footer__block {
     display: flex;
     padding: 20px 0;
@@ -210,6 +234,7 @@ body {
     font-size: 16px;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid #FEE42A;
 }
 
 .footer__copy {
